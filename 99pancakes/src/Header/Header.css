@@ -75,8 +75,10 @@
     display: none;
     font-family: "Poppins", sans-serif;
 }
+
 .searchbar>input:focus{
     outline: none;
+    color: #000000;
 }
 
 .btn-span{
@@ -131,9 +133,10 @@
 
 .link-div{
     width: 62%;
+    margin:auto ;
+    margin-right: 360px;
     padding: 25px;
     gap: 25px;
-    margin:auto ;
     background-color: #fff;
     font-family: "Tenor Sans",sans-serif;
     display: flex;
@@ -149,6 +152,7 @@
     margin-inline: 10px;
     text-wrap: nowrap;
     transition: 500ms linear all;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0);
 }
 
 .ctaLink{
@@ -162,6 +166,6 @@
 }
 
 .link-div>a:hover{
-    border-bottom:2px solid black;
-    
+    border-bottom:1.5px solid black;
 }
+
