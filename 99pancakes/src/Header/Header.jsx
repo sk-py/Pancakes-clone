@@ -1,8 +1,14 @@
 import "./Header.css";
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const sideNav = useRef();
+
+  const toggleNav = (e) => {
+    sideNav.current.style.display = "none";
+  };
+
   return (
     <div className="header poppins-light">
       <nav className="first-nav">
@@ -65,7 +71,43 @@ const Header = () => {
           <Link>Partner Login</Link>
         </div>
       </nav>
-      <div className="side-nav"></div>
+      <div className="side-nav" id="sideNav" ref={sideNav}>
+        <p className="menu-header">
+          Menu
+          <svg
+            onClick={toggleNav}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            style={{
+              fill: "black",
+              zIndex: "101",
+              width: "1.4rem",
+              cursor: "pointer",
+            }}
+          >
+            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+          </svg>
+        </p>
+        <Link>About Us</Link>
+        <Link>Products</Link>
+        <Link className="ctaLink">Order Online</Link>
+        <Link>Book An Event</Link>
+        <Link>Franchise</Link>
+        <Link>Locations</Link>
+        <Link>Careers</Link>
+        <Link>Contact Us</Link>
+        <Link>Partner Login</Link>
+        <Link className="Acc-Btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            style={{ width: "1.1rem" }}
+          >
+            <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+          </svg>
+          Account
+        </Link>
+      </div>
     </div>
   );
 };

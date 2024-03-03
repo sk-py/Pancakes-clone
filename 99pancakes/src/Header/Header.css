@@ -129,6 +129,7 @@
     width: 100dvw;
     height: max-content;
     background-color: #fff;
+    position: relative;
 }
 
 .link-div{
@@ -137,7 +138,7 @@
     margin-right: 360px;
     padding: 25px;
     gap: 25px;
-    background-color: #fff;
+    background-color: hsl(0, 0%, 100%);
     font-family: "Tenor Sans",sans-serif;
     display: flex;
     align-items: center;
@@ -169,3 +170,39 @@
     border-bottom:1.5px solid black;
 }
 
+.side-nav{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    width: 400px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    font-family: "Tenor Sans",sans-serif;
+    gap: 1.8rem;
+    background-color: #fff;
+}
+.side-nav>a{
+    text-decoration: none;
+    margin-left: 1.5rem;
+   
+}
+
+.menu-header{
+    width: 85%;
+    margin-top: 10px;
+    font-size: larger;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Acc-Btn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
