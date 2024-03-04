@@ -89,6 +89,7 @@ a{
 
 .counter1{
     background-color: #FFD7B4;
+    
 }
 .counter2{
     background-color: #FFDF87;
@@ -96,10 +97,11 @@ a{
 .counter3{
     background-color: #E9E0FF;
 }
-
-
-
-
+.count>p{
+    font-family: "Poppins","sans-serif";
+    font-size: 1.1rem;
+    font-weight: light;
+}
 .counter-container {
     display: grid;
     grid-template-columns:repeat(3,1fr);
@@ -107,11 +109,12 @@ a{
   }
   .main-container{
     overflow-x: hidden;
+    padding: 5rem;
   }
   
   .counter-container .counter1 , .counter2  ,.counter3{
     text-align:center;
-    padding:25px 10px;
+   padding: 50px;
     border-radius:30px;
   }
   .counter-container .counter1 , .counter2 , .counter3 , span {
@@ -141,30 +144,63 @@ a{
    padding-left: 100px;
   padding-top: 80px;
   padding-bottom: 80px;
+  font-family: "Tenor Sans",sans-serif;
 }
 .right-sec{
     padding-left:60px ;
+    font-size: 2rem;
+    text-wrap: wrap;
 }
+
 .btn-apply{
     background-color: #8e80c8;
-    height: 60px;
+    height: 50px;
     width: 200px;
     border-radius: 50px;
     color: white;
     font-size: 20px;
+    border: none;
    
 }
+.youtube>iframe{
+    width: 700px;
+    height: 400px;
+}
 
-@media (max-width:767px){
+
+@media (max-width:1020px){
     .youtube{
         flex-direction: column;
-        
+        width: 99vw;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 2rem;
+    }
+    .youtube>iframe{
+        width: 100%;
+    }
+    .right-sec{
+        padding-left: 0;
+    }
+    .main-container{
+        padding: 1rem;
+    }
+    .counter-container .counter1 , .counter2  ,.counter3{
+        padding: 25px;
     }
 }
 .hero{
-    width: 97vw;
-    overflow-x: hidden;
+    width: 98%;
+    margin: auto;
     
+}
+.hero-video{
+    width: 98vw;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

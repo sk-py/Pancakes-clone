@@ -1,46 +1,45 @@
 import './Footer.css';
 import React from 'react';
-import pancake from '../../public/pancake.jpg'
+import pancake from '../assets/pancake.jpg'
 import hero from '../assets/hero.mp4'
 import NumberCounter from 'number-counter'
+import slider, { Slider } from "../Slider/Slider"
 
 
 export const Footer = () => {
   return (
     <>   
-    
+    <div className='hero-video'>
     <video  autoPlay muted loop className="hero" src={hero}></video>
+    </div>
          <div className='main-container'>
               <div className='counter-container'>
                 <div className='counter1'>
                   <span className='count'><NumberCounter end=
-                  {40} start={0} delay='3' postFix='+' /> </span>
-                
-                  <p>Outlets</p>  
+                  {40} start={0} delay='3' postFix='+' /> 
+                   <p>Outlets</p>  
+                  </span>
                    </div>
                    <div className='counter2'>
                   <span className='count'><NumberCounter end=
-                  {10} start={0} delay='1' postFix='+' /></span>
+                  {10} start={0} delay='1' postFix='+' />
                    <p>Cities we are present in</p>
+                  </span>
                    </div>
                    <div className='counter3'>
                   <span className='count'>1</span>
-                  <span>Million+</span>
+                  <span className='count'>Million+
                   <p>Pancakes Sold</p>
+                  </span>
                    </div>
 
               </div>
-            
          </div>
-
-
-
-
+         <Slider/>
 <div className='youtube'>
-
-<iframe width="738" height="360" src="https://www.youtube.com/embed/NwUYPqEUq-I?list=TLGGQrzOr1zO4vUwNDAzMjAyNA" title="Franchise Details" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/NwUYPqEUq-I?list=TLGGQrzOr1zO4vUwNDAzMjAyNA" title="Franchise Details" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <div className='right-sec'>
-    <h2>Own the Fastest Growing Franchise Cafe</h2>
+    <p>Own the Fastest Growing Franchise Cafe</p>
     <button className='btn-apply'>Apply Now</button>
   </div>
 </div>
@@ -48,7 +47,7 @@ export const Footer = () => {
                         <div className='footer'>
                 <div className='footer-col'>
                   <p className="Footers-head">99 pancakes</p>
-                 <img src='pancake.jpg'></img>
+                 <img src={pancake}></img>
                 </div>
                 <div  className='footer-col'>
                 <p className="Footers-head">Quick Links</p>
