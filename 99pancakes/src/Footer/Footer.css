@@ -3,22 +3,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:sans-serif;
-    line-height:2 ;
+    
+   
     
 }
-footer{
+.footer{
     background-color: #faeaed;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     align-items: start;
     justify-content: space-between;
     overflow-x: hidden;
+    line-height:2 ;
+    font-family: "Tenor Sans",sans-serif;
+    margin: auto;
+
 
 }
+footer{
+    background-color: #faeaed; 
+    padding: 4rem; 
+    
+}
+.Footers-head{
+    font-size: larger;
+    margin-bottom: 0.5rem;
+}
 img{
-    width: 40%;
+    width: 45%;
+    
 }
 ul{
     list-style: none;
@@ -44,22 +58,33 @@ a{
 }
 .sub-footer{
     background-color:#faeaed ;
+   font-family: "Poppins","sans-serif";
+}
+.sub-footer>span>p{
+    padding-left: 120px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-size: large;
+    opacity: 70%;
 
 }
-.sub-footer,h3{
-    padding-left: 50px;
-    padding-top: 15px;
-    padding-bottom: 5px;
-}
 @media(max-width:740px){
-    footer{
-        
+    .footer{
+        width: 100%;
         flex-direction: column;
+        text-wrap: nowrap;
     }
     .social-icons{
      gap: 10px;
+     width: 500px;
     }
-   
+    .footer-col{
+        width: 40px;
+    }
+    img{
+        width: 10rem;
+    }
+
 }
 
 .counter1{
@@ -120,7 +145,7 @@ a{
 .right-sec{
     padding-left:60px ;
 }
-button{
+.btn-apply{
     background-color: #8e80c8;
     height: 60px;
     width: 200px;

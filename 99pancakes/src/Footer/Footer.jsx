@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <>   
     
-    <video className="hero" src={hero}></video>
+    <video  autoPlay muted loop className="hero" src={hero}></video>
          <div className='main-container'>
               <div className='counter-container'>
                 <div className='counter1'>
@@ -41,16 +41,17 @@ export const Footer = () => {
 <iframe width="738" height="360" src="https://www.youtube.com/embed/NwUYPqEUq-I?list=TLGGQrzOr1zO4vUwNDAzMjAyNA" title="Franchise Details" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <div className='right-sec'>
     <h2>Own the Fastest Growing Franchise Cafe</h2>
-    <button>Apply Now</button>
+    <button className='btn-apply'>Apply Now</button>
   </div>
 </div>
                       <footer>
+                        <div className='footer'>
                 <div className='footer-col'>
-                  <h4>99 pancakes</h4>
+                  <p className="Footers-head">99 pancakes</p>
                  <img src='pancake.jpg'></img>
                 </div>
                 <div  className='footer-col'>
-                <h4>Quick Links</h4>
+                <p className="Footers-head">Quick Links</p>
                   <ul>
                     <li><a href='#'>About Us</a></li>
                     <li><a href='#'></a>Products</li>
@@ -63,14 +64,14 @@ export const Footer = () => {
                   </ul>
                 </div>
                 <div  className='footer-col'>
-                <h4>Legal</h4>
+                <p className="Footers-head">Legal</p>
                   <ul>
                     <li><a href='#'>Privacy Policy</a></li>
                     <li><a href='#'></a>Terms And Conditions</li>
                   </ul>
                 </div>
                 <div  className='footer-col'>
-                <h4>Contact Us</h4>
+                <p className="Footers-head">Contact Us</p>
                  <div className='content'> 
                    <p>
                     <a href='dishilshah500@gmail.com'>info@99pancakes.in</a>
@@ -83,11 +84,12 @@ export const Footer = () => {
                    </div>
                  </div>
                 </div>
+                </div>
               </footer>
               <hr></hr>
              <div className='sub-footer'>
               <span>
-                <h6>Copyright ©️ 2024 Dishil & Mubashir Pvt Ltd</h6>
+                <p>Copyright ©️ 2024 Dishil & Mubashir Pvt Ltd</p>
               </span>
               </div>
     </>
