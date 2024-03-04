@@ -5,14 +5,16 @@
     box-sizing: border-box;
     font-family:sans-serif;
     line-height:2 ;
+    
 }
 footer{
     background-color: #faeaed;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
+    overflow-x: hidden;
 
 }
 img{
@@ -78,6 +80,9 @@ a{
     grid-template-columns:repeat(3,1fr);
     gap:40px;
   }
+  .main-container{
+    overflow-x: hidden;
+  }
   
   .counter-container .counter1 , .counter2  ,.counter3{
     text-align:center;
@@ -131,6 +136,12 @@ button{
         
     }
 }
+.hero{
+    width: 97vw;
+    overflow-x: hidden;
+    
+}
+
 
 
 

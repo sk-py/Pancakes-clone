@@ -1,26 +1,27 @@
 import './Footer.css';
 import React from 'react';
 import pancake from '../../public/pancake.jpg'
+import hero from '../assets/hero.mp4'
+import NumberCounter from 'number-counter'
 
 
 export const Footer = () => {
   return (
     <>   
     
-     <video  width="1900" height="596"autoplay muted loop>
-      <source src='999bcff1a5854e55918699b14ff165c5.mp4' type='video/mp4'></source>
-     </video>
+    <video className="hero" src={hero}></video>
          <div className='main-container'>
               <div className='counter-container'>
                 <div className='counter1'>
-                  <span className='count'>40 </span>
-                  <span>+</span>
+                  <span className='count'><NumberCounter end=
+                  {40} start={0} delay='3' postFix='+' /> </span>
+                
                   <p>Outlets</p>  
                    </div>
                    <div className='counter2'>
-                  <span className='count'>10 </span>
-                  <span>+</span>
-                  <p>Cities we are present in</p>
+                  <span className='count'><NumberCounter end=
+                  {10} start={0} delay='1' postFix='+' /></span>
+                   <p>Cities we are present in</p>
                    </div>
                    <div className='counter3'>
                   <span className='count'>1</span>
@@ -37,7 +38,7 @@ export const Footer = () => {
 
 <div className='youtube'>
 
-<iframe width="850" height="450" src="https://www.youtube.com/embed/NwUYPqEUq-I?list=TLGGQrzOr1zO4vUwMTAzMjAyNA" title="Franchise Details" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="738" height="360" src="https://www.youtube.com/embed/NwUYPqEUq-I?list=TLGGQrzOr1zO4vUwNDAzMjAyNA" title="Franchise Details" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <div className='right-sec'>
     <h2>Own the Fastest Growing Franchise Cafe</h2>
     <button>Apply Now</button>
@@ -86,11 +87,12 @@ export const Footer = () => {
               <hr></hr>
              <div className='sub-footer'>
               <span>
-                <h3>Copyright ©️ 2024 Dishil & Mubashir Pvt Ltd</h3>
+                <h6>Copyright ©️ 2024 Dishil & Mubashir Pvt Ltd</h6>
               </span>
               </div>
     </>
   )
 }
+export default Footer;
 
 

@@ -23,7 +23,7 @@
     fill: rgba(0, 0, 0, 0.808);
 }
 .first-nav{
-    width: 100vw;
+    width: 100%;
     height: max-content;
     padding: 0.5rem;
     background-color: #faeaed;
@@ -103,6 +103,7 @@
     display: flex;
     align-items: center;
     gap: 7px;
+    color: black;
 }
 
 .accSvg{
@@ -201,8 +202,9 @@
     justify-content: space-between;
 }
 
-.Acc-Btn{
+.Aac-Btn{
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    
 }
