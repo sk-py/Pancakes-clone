@@ -17,7 +17,7 @@
     width: 6rem;
 }
 .icon>svg{
-    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
     height: 1.3rem;
     margin-left:0.8rem ;
     fill: rgba(0, 0, 0, 0.808);
@@ -46,7 +46,7 @@
 }
 .searchbar{
     width: 100%;
-    height: 60px;
+    height: 55px;
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
